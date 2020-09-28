@@ -68,6 +68,7 @@ const ExerciseRenderer = (props) => (
   <Countdown
     date={Date.now() + props.timeInSeconds * 1000}
     intervalDelay={0}
+    precision={3}
     ref={props.countdownRef}
     onComplete={props.onComplete}
     renderer={(propsRender) => (
@@ -85,7 +86,7 @@ const ExerciseRenderer = (props) => (
               success: {
                 symbol: (
                   <p className={props.isBreak ? "neonOrange" : "neon"}>
-                    {propsRender.total / 1000}
+                    {Math.floor(propsRender.total / 1000)}
                   </p>
                 ),
                 color: props.isBreak ? "#df740c" : "#6fc3df",

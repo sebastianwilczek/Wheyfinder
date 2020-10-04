@@ -3,6 +3,7 @@ export const workouts = [
     name: "Chest",
     timeRep: 40,
     timeBreak: 20,
+    weight: 12.5,
     exercises: [
       "Benchpressing",
       "Flies",
@@ -38,6 +39,7 @@ export const workouts = [
     name: "Triceps",
     timeRep: 40,
     timeBreak: 20,
+    weight: 12.5,
     exercises: [
       "Benchpressing, holding together",
       "Triceppressing",
@@ -57,6 +59,7 @@ export const workouts = [
     name: "Back 1",
     timeRep: 40,
     timeBreak: 45,
+    weight: 14.5,
     exercises: [
       "Pull Along Legs, bent over",
       "Pull Along Legs, bent over",
@@ -85,6 +88,7 @@ export const workouts = [
     name: "Biceps",
     timeRep: 40,
     timeBreak: 20,
+    weight: 12.5,
     exercises: [
       "Drag Curls",
       "Curls, bent over, turn around",
@@ -129,7 +133,7 @@ export const workouts = [
   },
   {
     name: "Legs",
-    timeRep: 30,
+    timeRep: 5,
     timeBreak: 0,
     exercises: ["Haha, as if I would train legs"],
   },

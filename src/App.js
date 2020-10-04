@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import { workouts } from "./workouts.js";
 import Process from "./Process.js";
+import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [currentWorkout, setCurrentWorkout] = useState(null);
@@ -36,6 +38,12 @@ function App() {
               )}{" "}
               minutes
             </h3>
+            {currentWorkout.weight && (
+              <h3 className="neon">
+                <FontAwesomeIcon icon={faDumbbell} className="neonIcon" />{" "}
+                {currentWorkout.weight} KG each
+              </h3>
+            )}
             <button
               className="neonButtonOrange"
               onClick={() => setStarted(true)}
@@ -44,7 +52,11 @@ function App() {
             </button>
             <button
               className="neonButton"
-              onClick={() => setCurrentWorkout(null)}
+              onClick={() => {
+                setCurrentWorkout(null);
+                setStarted(false);
+                window.location.reload();
+              }}
             >
               Back
             </button>

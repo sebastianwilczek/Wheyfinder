@@ -24,6 +24,11 @@
   background-color: #0b090a;
 }
 
+.neonIcon {
+  color: #fff;
+  filter: drop-shadow(0px 0px 4px #6fc3df);
+}
+
 .neonOrange {
   color: #fff;
   text-shadow: 0 0 5px #df740c, 0 0 10px #df740c;

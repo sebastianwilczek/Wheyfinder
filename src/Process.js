@@ -20,6 +20,7 @@ const Process = (props) => {
   const advance = () => {
     play();
     if (schedule.length === index + 1) {
+      countdownRef.current.pause();
       props.onComplete();
       return;
     }
